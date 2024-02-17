@@ -41,5 +41,8 @@ jobs:
       run: ./vendor/bin/phpunit --verbose tests
       working-directory: project4
 
+    - name: Reset Checkout
+      run: git reset --hard
+
     - name: Build Docker Compose
       run: docker compose build
