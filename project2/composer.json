@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Project2\\" : "src/Project2/"
+        }
+    },
+    "require": {
+        "league/csv": "^9.0"
+    }
+}

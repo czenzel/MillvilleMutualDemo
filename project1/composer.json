@@ -1,0 +1,6 @@
+{
+    "require": {
+        "formr/formr": "^1.4.11",
+        "twbs/bootstrap": "^5.3.2"
+    }
+}

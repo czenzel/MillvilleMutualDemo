@@ -10,7 +10,7 @@ RUN mkdir -p /app/queue/
 WORKDIR /app
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-RUN /usr/bin/composer require league/csv:^9.0
 COPY . /app/
+RUN /usr/bin/composer install
 
 CMD php -S 0.0.0.0:8082
