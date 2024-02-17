@@ -33,19 +33,13 @@ jobs:
       run: composer validate --strict
       working-directory: project4
 
-    - name: Create Testing Directory for Project 4
-      run: mkdir -p tests/project4
-    
-    - name: Copy Project 4 for Testing
-      run: cp -r project4/* tests/project4
-
     - name: Install Project 4
       run: composer install
-      working-directory: tests/project4
+      working-directory: project4
 
     - name: Test Project 4
       run: ./vendor/bin/phpunit --verbose tests
-      working-directory: tests/project4
+      working-directory: project4
 
     - name: Build Docker Compose
       run: docker compose build
