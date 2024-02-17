@@ -1,4 +1,7 @@
 {
+    "name": "millville/project1",
+    "description": "Project 1 for Millville Mutual Insurance",
+    "license": "proprietary",
     "require": {
         "formr/formr": "^1.4.11",
         "twbs/bootstrap": "^5.3.2",

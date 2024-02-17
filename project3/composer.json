@@ -1,4 +1,7 @@
 {
+    "name": "millville/project3",
+    "description": "Project 3 for Millville Mutual Insurance",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Project3\\" : "src/Project3",
