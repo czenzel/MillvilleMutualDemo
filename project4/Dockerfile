@@ -3,7 +3,7 @@ FROM alpine:latest
 EXPOSE 8084
 
 RUN apk update
-RUN apk add php curl php-mbstring php-zip php-phar php-openssl php-dom
+RUN apk add php curl php-mbstring php-zip php-phar php-openssl php-dom php-ctype php-xmlwriter php-xml php-tokenizer php-session php-curl
 
 RUN mkdir -p /app
 RUN mkdir -p /app/queue/
