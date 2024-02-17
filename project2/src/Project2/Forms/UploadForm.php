@@ -10,16 +10,18 @@ class UploadForm
 
     public function render()
     {
-        $contents = <<<FORM
-            <p>
-                <form action="/" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="csvupload" />
-                    <input type="submit" value="Upload" />
-                </form>
-            </p>
-        FORM;
+        $form = new \Formr\Formr('bootstrap');
+        $form->required = '*';
 
-        return $contents;
+        if ($form->submitted())
+        {
+            $form->validate('*');
+            $form->success_message = 'File uploaded';
+        }
+
+        $form->messages();
+        $form->open_multipart();
+        $form->create_form('CSV File|file');
     }
 
     public function file() 
@@ -28,7 +30,7 @@ class UploadForm
 
         if ($exists)
         {
-            return $_FILES['csvupload']['tmp_name'];
+            return $_FILES['csv_file']['tmp_name'];
         }
 
         return null;
@@ -36,8 +38,8 @@ class UploadForm
 
     public function uploaded()
     {
-        $exists = isset($_FILES) && isset($_FILES['csvupload']) &&
-            file_exists($_FILES['csvupload']['tmp_name']);
+        $exists = isset($_FILES) && isset($_FILES['csv_file']) &&
+            file_exists($_FILES['csv_file']['tmp_name']);
         
         return $exists;
     }
