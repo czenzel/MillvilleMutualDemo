@@ -2,7 +2,7 @@
 
 namespace Project4\Exceptions;
 
-class NumericException extends Exception
+class NumericException extends \Exception
 {
     public function __construct($message = 'Numeric array expected', $code = 0, Exception $previous = null)
     {

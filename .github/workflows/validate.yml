@@ -38,7 +38,7 @@ jobs:
       working-directory: project4
 
     - name: Test Project 4
-      run: ./vendor/bin/phpunit --bootstrap src/autoload.php --verbose tests
+      run: ./vendor/bin/phpunit --verbose tests
       working-directory: project4
 
     - name: Build Docker Compose
