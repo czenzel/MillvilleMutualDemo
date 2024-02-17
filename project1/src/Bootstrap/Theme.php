@@ -14,7 +14,7 @@ class Theme
         <!DOCTYPE html>
         <html>
             <head>
-                <title>Project 1</title>
+                <title>Project</title>
             </head>
             <body>
         EOL;

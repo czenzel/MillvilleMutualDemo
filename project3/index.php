@@ -19,6 +19,10 @@ $navigation->render();
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="alert alert-danger alert-api" role="alert">
+                            <h4 class="alert-heading">Warning</h4>
+                            <p>You have entered an invalid VIN number that was previouslly recgonized. In a perfect production application you would get the exact exception and show it here.</p>
+                        </div>
                         <div id="vehicles">
                         <?php
                         $table->render();

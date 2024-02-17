@@ -2,3 +2,8 @@ main
 {
     margin-top: 25px;
 }
+
+.alert-api
+{
+    display: none;
+}

@@ -24,7 +24,10 @@ function load_ajax_submission() {
         url: "/ajax.php",
         data: formData
       }).done(function (data) {
+        $('.alert-api').hide();
         $('#vehicles').html(data);
+      }).fail(function (jqXHR, textStatus, errorThrown) {
+        $('.alert-api').show();
       });
   
       event.preventDefault();
