@@ -22,7 +22,7 @@ final class SummaryTest extends TestCase
     public function testCheck()
     {
         $summary = new Summary();
-        $this->expectException(NumericException::class);
+        $this->expectException(\Project4\Exceptions\NumericException::class);
         $summary->check([1, 2, 'a', 4, 5]);
     }
 
