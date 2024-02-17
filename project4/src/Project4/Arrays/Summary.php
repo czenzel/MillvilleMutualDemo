@@ -10,7 +10,8 @@ class Summary
 
     public function check(array $array)
     {
-        foreach ($array as $value) {
+        foreach ($array as $value)
+        {
             if (!is_numeric($value))
             {
                 throw new NumericException();
