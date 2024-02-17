@@ -12,7 +12,7 @@ services:
       - "8082:8082"
 
   project3:
-    build: project1
+    build: project3
     ports:
       - "8083:8083"
 

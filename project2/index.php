@@ -6,7 +6,7 @@ $navigation = new Bootstrap\Navigation($SITE_CONFIG['TITLE'], $SITE_CONFIG['NAVI
 $theme = new Bootstrap\Theme();
 
 $theme->header();
-$navigation->render()
+$navigation->render();
 ?>
         <main>
             <div class="container">
