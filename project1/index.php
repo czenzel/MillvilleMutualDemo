@@ -5,16 +5,18 @@
         <title>Project 1</title>
     </head>
     <body>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Lead Entry</a>
-            </div>
-        </div>
+        <?php
+        $navigation = new Project1\Bootstrap\Navigation();
+        $navigation->render();
+        ?>
         <main>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <?php include(dirname(__FILE__) . '/forms/lead.php'); ?>
+                        <?php
+                        $lead_form = new Project1\Forms\LeadForm();
+                        $lead_form->render();
+                        ?>
                     </div>
                 </div>
             </div>

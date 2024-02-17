@@ -2,3 +2,18 @@ main
 {
     margin-top: 25px;
 }
+
+tfoot tr td.count
+{
+    text-align: center;
+}
+
+td.sum
+{
+    text-align: right;
+}
+
+tfoot tr td.sum
+{
+    font-weight: bold;
+}
