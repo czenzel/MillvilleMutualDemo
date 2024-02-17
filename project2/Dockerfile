@@ -6,6 +6,7 @@ RUN apk update
 RUN apk add php curl php-mbstring php-zip php-phar php-openssl
 
 RUN mkdir -p /app
+RUN mkdir -p /app/queue/
 WORKDIR /app
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 

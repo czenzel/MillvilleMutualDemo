@@ -23,6 +23,9 @@ $upload_form = new Project2\Forms\UploadForm();
         <p>
             <pre><?= $json ?></pre>
         </p>
+        <p>
+            <a href="<?= $csv->written_url($json) ?>">Download JSON</a>
+        </p>
     <?php endif; ?>
 </body>
 </html>
