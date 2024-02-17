@@ -1,5 +1,7 @@
 # Millville Interview IT Department Candidate Projects
 
+[![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml)
+
 ## Requirements
 
 * Docker Desktop (or Docker with Docker Compose)
