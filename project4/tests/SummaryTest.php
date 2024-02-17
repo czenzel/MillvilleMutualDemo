@@ -2,7 +2,7 @@
 
 namespace Project4\Arrays;
 
-use Project4\Exceptions;
+use Project4\Exceptions\NumericException;
 use PHPUnit\Framework\TestCase;
 
 final class SummaryTest extends TestCase
@@ -22,7 +22,7 @@ final class SummaryTest extends TestCase
     public function testCheck()
     {
         $summary = new Summary();
-        $this->expectException(\Project4\Arrays\NumericException::class);
+        $this->expectException(NumericException::class);
         $summary->check([1, 2, 'a', 4, 5]);
     }
 
