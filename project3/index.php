@@ -1,20 +1,13 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) session_start();
-
 require_once(dirname(__FILE__) . '/vendor/autoload.php');
+
+session_start();
+$database = new Project3\Database\InventoryDatabase();
+$database->new();
+
 require_once(dirname(__FILE__) . '/config.php');
 
 $table = new Project3\UI\InventoryTable();
-$alert = '';
-
-try
-{
-    $table->process_submission();
-}
-catch (Exception $e)
-{
-    $alert = $e->getMessage();
-}
 
 $navigation = new Bootstrap\Navigation($SITE_CONFIG['TITLE'], $SITE_CONFIG['NAVIGATION']);
 $theme = new Bootstrap\Theme();
@@ -26,14 +19,11 @@ $navigation->render();
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        <div id="vehicles">
                         <?php
-                        if ($alert != '')
-                        {
-                            echo "<div class='alert alert-danger' role='alert'>{$alert}</div>";
-                        }
-
                         $table->render();
                         ?>
+                        </div>
                         <p><em>Enter the vehicle's information and press the Enter key to continue</em></p>
                     </div>
                 </div>
@@ -42,6 +32,8 @@ $navigation->render();
         <style>
             @import url(/css/styles.css);
         </style>
+        <script src="/js/forms.php" async>
+        </script>
 <?php
 $theme->scripts_body();
 $theme->footer();

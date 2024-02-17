@@ -4,6 +4,8 @@ namespace Project3\Entities;
 
 class DealershipEntity
 {
+    public $vehicles;
+
     public function __construct($name)
     {
         $this->name = $name;

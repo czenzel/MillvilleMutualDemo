@@ -30,3 +30,4 @@
 * Additional try-catch Exception Handling
 * More Custom Exception Types
 * Code Comments and Documentation
+* Code Review, Cleanup, Formatting
