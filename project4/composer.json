@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4": {
-            "Project4\\" : "src/Project4"
+            "Project4\\" : "src/Project4",
+            "Bootstrap\\": "src/Bootstrap"
         }
     }
 }
