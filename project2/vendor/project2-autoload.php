@@ -1,10 +1,10 @@
 <?php
 
-class Project4Autoload
+class Project2Autoload
 {
     function __construct()
     {
-        $this->namespace = 'Project4';
+        $this->namespace = 'Project2';
         
         spl_autoload_register(array($this, 'loader'));
         $this->register();
@@ -29,10 +29,9 @@ class Project4Autoload
 
     function register()
     {
-        spl_autoload('Project4\Arrays\Summary');
-        spl_autoload('Project4\Exceptions\NumericException');
-        spl_autoload('Project4\Demo\Demonstration');
+        spl_autoload('Project2\Tasks\CSVtoJSON');
+        spl_autoload('Project2\Forms\UploadForm');
     }
 }
 
-$project4autoload = new Project4Autoload();
+$project2autoload = new Project2Autoload();

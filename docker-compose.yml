@@ -1,6 +1,11 @@
 version: '3.8'
 
 services:
+  project2:
+    build: project2
+    ports:
+      - "8082:8082"
+
   project4:
     build: project4
     ports:
