@@ -10,8 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
-
+  tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -41,8 +40,13 @@ jobs:
       run: ./vendor/bin/phpunit --verbose tests
       working-directory: project4
 
-    - name: Reset Checkout
-      run: git reset --hard
+  build:
+    runs-on: ubuntu-latest
 
-    - name: Build Docker Compose
-      run: docker compose build
+    needs: tests
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Build Docker Compose
+        run: docker compose build
