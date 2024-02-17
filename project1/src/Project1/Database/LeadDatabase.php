@@ -63,7 +63,7 @@ class LeadDatabase
         $headers = $this->get_headers();
 
         usort($records, function ($a, $b) {
-            return $a['City'] <=> $b['Last Name'];
+            return $a['Last Name'] <=> $b['City'];
         });
         
         return $records;
