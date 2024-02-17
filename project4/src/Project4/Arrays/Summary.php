@@ -14,7 +14,7 @@ class Summary
         {
             if (!is_numeric($value))
             {
-                throw new NumericException();
+                throw new \Project4\Exceptions\NumericException();
             }
         }
     }
