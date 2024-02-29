@@ -1,10 +1,20 @@
 # Millville Interview IT Department Candidate Projects
 
-[![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml) [![Linked-In](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chriszenzel) [![Hits](https://hits.sh/github.com/czenzel/MillvilleMutualInterview.svg)](https://hits.sh/github.com/czenzel/MillvilleMutualInterview/)
+[![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml) [![Hits](https://hits.sh/github.com/czenzel/MillvilleMutualInterview.svg)](https://hits.sh/github.com/czenzel/MillvilleMutualInterview/)
 
 ## Project Requirements
 
 ![Interview Project](static/202402interviewproject.jpg)
+
+## Resume
+
+[![Linked-In](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chriszenzel)
+
+![Resume Page One](static/202402resume01.jpg)
+
+![Resume Page Two](static/202402resume02.jpg)
+
+![Resume Page Three](static/202402resume03.jpg)
 
 ## Requirements
 
