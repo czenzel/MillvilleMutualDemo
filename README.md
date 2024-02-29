@@ -2,6 +2,10 @@
 
 [![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml)
 
+## Project Requirements
+
+![202402interviewproject.jpg](202402interviewproject.jpg)
+
 ## Requirements
 
 * Docker Desktop (or Docker with Docker Compose)
