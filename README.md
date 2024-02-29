@@ -1,6 +1,6 @@
 # Millville Interview IT Department Candidate Projects
 
-[![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml)
+[![Simple Validation](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml/badge.svg)](https://github.com/czenzel/MillvilleMutualDemo/actions/workflows/validate.yml) [![Linked-In](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/chriszenzel)
 
 ## Project Requirements
 
