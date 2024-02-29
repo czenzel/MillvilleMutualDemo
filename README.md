@@ -4,7 +4,7 @@
 
 ## Project Requirements
 
-![202402interviewproject.jpg](202402interviewproject.jpg)
+![Interview Project](static/202402interviewproject.jpg)
 
 ## Requirements
 
